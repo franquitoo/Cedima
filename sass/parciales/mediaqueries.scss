@@ -1,0 +1,122 @@
+@media screen and (max-width: 400px){
+
+.header{
+    display: grid;
+    grid-template-areas: "logo redes"
+                         "subs subs";
+    grid-template-columns: 50% auto;
+    grid-template-rows: 75% auto;
+    background-image: linear-gradient(to left, rgb(97, 228, 119), green);
+
+    &logo{
+        padding: 0rem;
+        margin-top: 2rem;
+    }
+
+    &subs{
+        gap: 2rem;
+        display: flex;
+        justify-content: center;
+        & a{
+            font-size: 1rem;
+        }
+    }
+
+    &redes{
+        gap: 1.5rem;
+        justify-content: center;
+    }
+}
+
+.main{
+
+    & section{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    &sectionbarra{
+        gap: 1.2rem;
+        padding: 0.5rem;
+
+        & h4{
+            font-size: 0.6rem;
+            margin-top: 2px;
+            text-align: center;
+        }
+
+        & div{
+
+            & a{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &imagenes{
+        align-items: center;
+        gap: 2rem;
+
+        & div img{
+            height: 12rem;
+            width: 17rem;
+        }
+    }
+
+    &imagenes2{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        & div img{
+            height: 12rem;
+            width: 17rem;
+        }
+    }
+
+    &titulo{
+        font-size: 2rem;
+    }
+
+    &logo{
+        width: 20rem;
+    }
+}
+
+.footer{
+    display: grid;
+    grid-template-areas: "logo col"
+                         "redes col";
+    grid-template-columns: 50% auto;
+    grid-template-rows: 65% auto;
+
+    & div img{
+        height: 10rem;
+        width: 10rem;    
+        padding: 1rem;
+    }
+
+    &col{
+        grid-area: col;
+    }
+
+    &img{
+        grid-area: logo;
+        display: flex;
+        justify-content: center;
+    }
+
+    &redes{
+        grid-area: redes;
+        justify-content: center;
+        
+        & div{
+            flex-direction: row;
+            gap: 1rem;
+        }
+        
+    }
+}
+
+}
