@@ -16,37 +16,52 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-image: linear-gradient(to right, green, #4bbd4b); }
+  background-image: url(/imagenes/headerfondo.jpg);
+  background-size: cover;
+  background-position: center; }
   .headerlogo {
-    padding: 1rem;
+    padding: 1.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
-    grid-area: logo; }
+    color: black;
+    grid-area: logo;
+    font-family: "Archivo Black", sans-serif;
+    font-style: italic; }
     .headerlogo img {
       height: 10rem; }
+    .headerlogo h3 {
+      font-family: "Archivo Black", sans-serif;
+      font-style: italic; }
   .headersubs {
     display: flex;
-    gap: 2.8rem;
+    gap: 3.2rem;
     grid-area: subs; }
     .headersubs a {
-      color: white;
+      color: black;
       font-size: 1.4rem;
       text-decoration: none;
-      transition: 0.3s; }
+      transition: 0.3s;
+      padding: 0.3rem;
+      border-radius: 10px;
+      box-shadow: 10px 10px 10px black; }
       .headersubs a:hover {
-        transform: scale(1.5, 1.5); }
+        transform: scale(1.4, 1.4);
+        background-color: #52c465; }
   .headerredes {
     display: flex;
     gap: 2rem;
     grid-area: redes; }
     .headerredes a {
-      color: white;
+      color: black;
       font-size: 2rem;
-      transition: 0.3s; }
+      transition: 0.3s;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 10px 10px 10px black; }
       .headerredes a:hover {
-        transform: scale(1.5, 1.5); }
+        transform: scale(1.5, 1.5);
+        background-color: #52c465; }
 
 .main {
   background-image: url(/imagenes/fondo.jpg);
@@ -72,6 +87,10 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
         .mainsectionbarra div a {
           color: white;
           font-size: 2rem; }
+      .mainsectionbarra h4 {
+        padding: 0.5rem;
+        box-shadow: 10px 10px 10px white;
+        border-radius: 10px; }
     .mainsectionpresen {
       display: flex;
       flex-direction: column;
@@ -84,7 +103,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
         max-width: 40rem; }
   .maintitulo {
     font-family: "Archivo Black", sans-serif;
-    font-style: normal;
+    font-style: italic;
     text-align: center;
     font-size: 4rem;
     cursor: pointer;
@@ -174,11 +193,14 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
       display: flex;
       flex-direction: column; }
 
-.act section {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 1rem; }
+.act {
+  background-image: url(/imagenes/fondo.jpg);
+  background-size: cover; }
+  .act section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem; }
 
 .card {
   position: relative;
@@ -238,55 +260,96 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
 .card:hover .back {
   transform: perspective(600px) rotateY(360deg); }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 410px) {
   .header {
     display: grid;
     grid-template-areas: "logo redes" "subs subs";
-    grid-template-columns: 50% auto;
-    grid-template-rows: 75% auto;
-    background-image: linear-gradient(to left, #61e477, green); }
+    grid-template-columns: 45% auto;
+    grid-template-rows: 70% auto;
+    background-image: url(/imagenes/headerfondo.jpg); }
     .headerlogo {
       padding: 0rem;
-      margin-top: 2rem; }
+      margin-top: 2rem;
+      box-shadow: 10px 10px 10px black; }
     .headersubs {
       gap: 2rem;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      margin-bottom: 0rem;
+      padding: 1rem; }
       .headersubs a {
-        font-size: 1rem; }
+        font-size: 0.9rem;
+        background-color: white; }
     .headerredes {
-      gap: 1.5rem;
+      gap: 1rem;
       justify-content: center; }
-  .main section {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1rem; }
-  .mainsectionbarra {
-    gap: 1.2rem;
-    padding: 0.5rem; }
-    .mainsectionbarra h4 {
-      font-size: 0.6rem;
-      margin-top: 2px;
-      text-align: center; }
-    .mainsectionbarra div a {
-      font-size: 1rem; }
-  .mainimagenes {
-    align-items: center;
-    gap: 2rem; }
-    .mainimagenes div img {
-      height: 12rem;
-      width: 17rem; }
-  .mainimagenes2 {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem; }
-    .mainimagenes2 div img {
-      height: 12rem;
-      width: 17rem; }
-  .maintitulo {
-    font-size: 2rem; }
-  .mainlogo {
-    width: 20rem; }
+      .headerredes a {
+        font-size: 1.8rem;
+        padding: 0.5rem; }
+  .main {
+    background: white; }
+    .main section {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1rem; }
+    .mainsectionbarra {
+      gap: 1.2rem;
+      padding: 0.5rem; }
+      .mainsectionbarra h4 {
+        font-size: 0.6rem;
+        margin-top: 2px;
+        text-align: center; }
+      .mainsectionbarra div a {
+        font-size: 1rem; }
+    .mainimagenes {
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      gap: 1rem; }
+      .mainimagenes div {
+        padding: 0.7rem;
+        background-color: #d6d5d5;
+        border-radius: 10px; }
+        .mainimagenes div img {
+          height: 4rem;
+          width: 6rem; }
+        .mainimagenes div h3 {
+          position: relative;
+          text-align: center;
+          margin: 0rem;
+          padding: 0.2rem;
+          font-size: 0.5rem; }
+    .mainimagenes2 {
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+      gap: 1rem; }
+      .mainimagenes2 div {
+        padding: 0.7rem;
+        background-color: #d8d7d7;
+        border-radius: 10px; }
+        .mainimagenes2 div img {
+          height: 4rem;
+          width: 6rem; }
+        .mainimagenes2 div h3 {
+          position: relative;
+          text-align: center;
+          margin: 0rem;
+          padding: 0.2rem;
+          font-size: 0.5rem; }
+    .maintitulo {
+      font-size: 1rem;
+      margin-top: 1rem; }
+    .mainlogo {
+      width: 20rem;
+      width: 100%; }
+    .mainsectionpresen {
+      padding: 0rem;
+      gap: 0rem; }
+      .mainsectionpresen h4 {
+        font-size: 1rem;
+        color: black; }
   .footer {
     display: grid;
     grid-template-areas: "logo col" "redes col";
