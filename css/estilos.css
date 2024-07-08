@@ -16,56 +16,56 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-image: url(/imagenes/headerfondo.jpg);
-  background-size: cover;
-  background-position: center; }
+  background-image: linear-gradient(to right, #06308a, #052d4e); }
   .headerlogo {
     padding: 1.2rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    color: black;
-    grid-area: logo;
-    font-family: "Archivo Black", sans-serif;
-    font-style: italic; }
+    color: white;
+    gap: 1rem; }
     .headerlogo img {
-      height: 10rem; }
+      height: 7rem;
+      border-radius: 10px; }
     .headerlogo h3 {
-      font-family: "Archivo Black", sans-serif;
-      font-style: italic; }
+      font-family: "Handlee", cursive;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 4rem;
+      text-decoration: underline; }
   .headersubs {
     display: flex;
-    gap: 3.2rem;
-    grid-area: subs; }
+    gap: 3.2rem; }
     .headersubs a {
-      color: black;
-      font-size: 1.4rem;
+      color: white;
+      font-size: 1.2rem;
       text-decoration: none;
       transition: 0.3s;
       padding: 0.3rem;
       border-radius: 10px;
-      box-shadow: 10px 10px 10px black; }
+      box-shadow: 8px 8px 8px white; }
       .headersubs a:hover {
         transform: scale(1.4, 1.4);
-        background-color: #52c465; }
+        background-color: #52c465;
+        color: black;
+        box-shadow: 8px 8px 8px black; }
   .headerredes {
     display: flex;
-    gap: 2rem;
-    grid-area: redes; }
+    gap: 2rem; }
     .headerredes a {
-      color: black;
-      font-size: 2rem;
+      color: white;
+      font-size: 1.5rem;
       transition: 0.3s;
       padding: 1rem;
       border-radius: 10px;
-      box-shadow: 10px 10px 10px black; }
+      box-shadow: 3px 3px 3px white; }
       .headerredes a:hover {
-        transform: scale(1.5, 1.5);
-        background-color: #52c465; }
+        transform: scale(1.4, 1.4);
+        background-color: #52c465;
+        color: black;
+        box-shadow: 10px 10px 10px black; }
 
 .main {
-  background-image: url(/imagenes/fondo.jpg);
-  background-size: cover; }
+  background-image: linear-gradient(to right, #86d886, white); }
   .main section {
     display: flex;
     gap: 1rem;
@@ -74,23 +74,24 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
     display: flex;
     flex-direction: column; }
     .mainsectionbarra {
-      background-color: gray;
-      color: white;
+      background-image: linear-gradient(to right, white, #86d886);
+      color: black;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      padding: 1rem;
+      padding: 0.1rem;
       width: 100%; }
       .mainsectionbarra div {
         display: flex;
-        gap: 1rem; }
+        gap: 2rem; }
         .mainsectionbarra div a {
-          color: white;
-          font-size: 2rem; }
+          color: black;
+          font-size: 1.5rem; }
       .mainsectionbarra h4 {
         padding: 0.5rem;
-        box-shadow: 10px 10px 10px white;
-        border-radius: 10px; }
+        border-radius: 10px;
+        font-size: 1.2rem;
+        margin-top: 0.4rem; }
     .mainsectionpresen {
       display: flex;
       flex-direction: column;
@@ -98,9 +99,19 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
       gap: 1rem;
       padding: 1rem; }
       .mainsectionpresen h4 {
-        color: white;
+        color: black;
         text-align: center;
-        max-width: 40rem; }
+        font-family: "Lexend", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal; }
+      .mainsectionpresen h2 {
+        color: black;
+        text-align: center;
+        font-family: "Lexend", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal; }
   .maintitulo {
     font-family: "Archivo Black", sans-serif;
     font-style: italic;
@@ -109,11 +120,11 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
     cursor: pointer;
     position: relative;
     padding: 10px 20px;
-    background: green;
+    background-image: linear-gradient(to right, white, #86d886);
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     transition: all 1s;
-    color: white; }
+    color: black; }
     .maintitulo:after, .maintitulo:before {
       content: " ";
       width: 10px;
@@ -146,12 +157,14 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
       position: relative; }
       .mainimagenes div img {
         height: 14rem;
-        width: 20rem; }
+        width: 20rem;
+        border-radius: 15px; }
       .mainimagenes div h3 {
         position: absolute;
         background-color: white;
         margin: 0.5rem;
-        padding: 0.2rem; }
+        padding: 0.3rem;
+        border-radius: 10px; }
     .mainimagenes2 {
       display: flex;
       justify-content: space-evenly;
@@ -160,42 +173,72 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
         position: relative; }
         .mainimagenes2 div img {
           height: 14rem;
-          width: 20rem; }
+          width: 20rem;
+          border-radius: 10px; }
         .mainimagenes2 div h3 {
           position: absolute;
           background-color: white;
           margin: 0.5rem;
-          padding: 0.2rem; }
+          padding: 0.5rem;
+          border-radius: 10px; }
   .mainlogo {
     width: 50rem; }
 
 .footer {
   display: flex;
-  background-color: grey;
   justify-content: space-evenly;
   align-items: center;
-  color: white; }
-  .footer div a {
-    color: white;
-    font-size: 2rem;
-    transition: 0.3s; }
-    .footer div a:hover {
-      transform: scale(1.5, 1.5); }
-  .footercol {
+  color: white;
+  background-image: linear-gradient(to right, #06308a, #052d4e);
+  padding: 2rem; }
+  .footer div {
     display: flex;
     flex-direction: column;
-    align-items: center; }
-  .footerredes {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .footerredes div {
+    justify-content: space-evenly;
+    color: white; }
+    .footer div a {
+      color: white;
+      font-size: 1rem;
+      transition: 0.3s;
+      padding: 0.2rem;
+      border-radius: 5px; }
+      .footer div a:hover {
+        transform: scale(1.5, 1.5);
+        background-color: #52c465;
+        color: #052d4e; }
+    .footer div p {
       display: flex;
-      flex-direction: column; }
+      gap: 0.3rem;
+      align-items: center; }
+  .footercol h5 {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal; }
+  .footercol p {
+    margin-bottom: 0rem; }
+  .footerinfo h5 {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal; }
+  .footerinfo p {
+    margin-bottom: 0rem; }
+  .footerredes h4 {
+    font-size: 1.4rem;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal; }
+  .footerredes div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; }
+    .footerredes div a {
+      font-size: 1.6rem; }
 
 .act {
-  background-image: url(/imagenes/fondo.jpg);
-  background-size: cover; }
+  background-image: linear-gradient(to right, #86d886, white); }
   .act section {
     display: flex;
     justify-content: space-evenly;
@@ -238,7 +281,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
 
 .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background: green;
+  background: #052d4e;
   padding: 15px;
   color: white;
   display: flex;
@@ -246,13 +289,20 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
   justify-content: space-between;
   text-align: center;
   box-shadow: 10px 10px 10px black; }
+  .card .back h3 {
+    border-bottom: 1px white solid;
+    padding-bottom: 0.5rem; }
 
 .card .back .link {
-  line-height: 50px;
-  height: 50px;
-  border-top: 2px solid white; }
+  border-top: 1px solid white; }
   .card .back .link a {
-    color: white; }
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: white;
+    transition: 1s;
+    line-height: 50px; }
+    .card .back .link a:hover {
+      transform: scale(1.5, 1.5); }
 
 .card:hover .front {
   transform: perspective(600px) rotateY(180deg); }
@@ -260,96 +310,99 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
 .card:hover .back {
   transform: perspective(600px) rotateY(360deg); }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 420px) {
   .header {
-    display: grid;
-    grid-template-areas: "logo redes" "subs subs";
-    grid-template-columns: 45% auto;
-    grid-template-rows: 70% auto;
-    background-image: url(/imagenes/headerfondo.jpg); }
+    padding: 0.5rem; }
     .headerlogo {
       padding: 0rem;
-      margin-top: 2rem;
-      box-shadow: 10px 10px 10px black; }
+      gap: 0.1rem; }
+      .headerlogo img {
+        height: 2rem; }
+      .headerlogo h3 {
+        font-size: 1rem;
+        margin-bottom: 0rem; }
     .headersubs {
-      gap: 2rem;
+      gap: 0.5rem;
       display: flex;
       justify-content: center;
-      margin-bottom: 0rem;
       padding: 1rem; }
       .headersubs a {
-        font-size: 0.9rem;
-        background-color: white; }
+        font-size: 0.5rem;
+        box-shadow: 5px 5px 5px black; }
+        .headersubs a:hover {
+          transform: scale(1.2, 1.2);
+          background-color: #52c465; }
     .headerredes {
-      gap: 1rem;
+      gap: 0.3rem;
       justify-content: center; }
       .headerredes a {
-        font-size: 1.8rem;
-        padding: 0.5rem; }
-  .main {
-    background: white; }
-    .main section {
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 1rem; }
-    .mainsectionbarra {
-      gap: 1.2rem;
-      padding: 0.5rem; }
-      .mainsectionbarra h4 {
         font-size: 0.6rem;
-        margin-top: 2px;
-        text-align: center; }
-      .mainsectionbarra div a {
-        font-size: 1rem; }
-    .mainimagenes {
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-evenly;
-      width: 100%;
-      gap: 1rem; }
-      .mainimagenes div {
-        padding: 0.7rem;
-        background-color: #d6d5d5;
-        border-radius: 10px; }
-        .mainimagenes div img {
-          height: 4rem;
-          width: 6rem; }
-        .mainimagenes div h3 {
-          position: relative;
-          text-align: center;
-          margin: 0rem;
-          padding: 0.2rem;
-          font-size: 0.5rem; }
-    .mainimagenes2 {
-      align-items: center;
-      justify-content: space-evenly;
-      width: 100%;
-      gap: 1rem; }
-      .mainimagenes2 div {
-        padding: 0.7rem;
-        background-color: #d8d7d7;
-        border-radius: 10px; }
-        .mainimagenes2 div img {
-          height: 4rem;
-          width: 6rem; }
-        .mainimagenes2 div h3 {
-          position: relative;
-          text-align: center;
-          margin: 0rem;
-          padding: 0.2rem;
-          font-size: 0.5rem; }
-    .maintitulo {
-      font-size: 1rem;
-      margin-top: 1rem; }
-    .mainlogo {
-      width: 20rem;
-      width: 100%; }
-    .mainsectionpresen {
-      padding: 0rem;
-      gap: 0rem; }
-      .mainsectionpresen h4 {
-        font-size: 1rem;
-        color: black; }
+        padding: 0.5rem;
+        box-shadow: 5px 5px 5px black; }
+  .main section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem; }
+  .mainsectionbarra {
+    gap: 1.2rem;
+    padding: 0.2rem; }
+    .mainsectionbarra h4 {
+      font-size: 0.6rem;
+      margin-top: 2px;
+      text-align: center; }
+    .mainsectionbarra div a {
+      font-size: 1rem; }
+  .mainimagenes {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 1rem; }
+    .mainimagenes div {
+      padding: 0.7rem;
+      background-color: #d6d5d5;
+      border-radius: 10px; }
+      .mainimagenes div img {
+        height: 4rem;
+        width: 6rem; }
+      .mainimagenes div h3 {
+        position: relative;
+        text-align: center;
+        margin: 0rem;
+        padding: 0.2rem;
+        font-size: 0.5rem; }
+  .mainimagenes2 {
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 1rem; }
+    .mainimagenes2 div {
+      padding: 0.7rem;
+      background-color: #d8d7d7;
+      border-radius: 10px; }
+      .mainimagenes2 div img {
+        height: 4rem;
+        width: 6rem; }
+      .mainimagenes2 div h3 {
+        position: relative;
+        text-align: center;
+        margin: 0rem;
+        padding: 0.2rem;
+        font-size: 0.5rem; }
+  .maintitulo {
+    font-size: 1rem;
+    margin-top: 1rem; }
+  .mainlogo {
+    width: 20rem;
+    width: 100%; }
+  .mainsectionpresen {
+    padding: 0rem;
+    gap: 0rem; }
+    .mainsectionpresen h2 {
+      font-size: 1rem; }
+    .mainsectionpresen h4 {
+      font-size: 0.8rem;
+      color: black; }
   .footer {
     display: grid;
     grid-template-areas: "logo col" "redes col";
@@ -370,4 +423,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
       justify-content: center; }
       .footerredes div {
         flex-direction: row;
-        gap: 1rem; } }
+        gap: 1rem; }
+  .card {
+    height: 10rem;
+    width: 8rem; } }
