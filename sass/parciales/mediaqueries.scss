@@ -154,6 +154,14 @@
         padding: 0rem;
         gap: 0rem;
 
+        & div div{
+            height: 236px;
+        }
+
+        & div div a{
+            font-size: 1rem;
+        }
+
         & h2{
             font-size: 1rem;
             margin-top: 1rem;
@@ -227,6 +235,21 @@
 .act{
     & section{
         gap: 1rem;
+    }
+
+    &titulos{
+        & h1{
+            font-size: 1rem;
+            padding: 0.2rem;
+        }
+
+        & h3{
+            font-size: 0.7rem;
+        }
+
+        & div{
+            height: 1rem;
+        }
     }
 }
 

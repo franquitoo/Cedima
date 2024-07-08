@@ -1,5 +1,6 @@
 .act{
     background-image: linear-gradient(to right, rgb(134, 216, 134),white);
+    padding-top: 1rem;
     
     & section{
         display: flex;
@@ -7,7 +8,38 @@
         align-items: center;
         padding: 1rem;
     }
+
+    &titulos{
+        background-image: linear-gradient( to right,rgb(5, 45, 78),rgb(6, 48, 138));
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        & div{
+            height: 4.5rem;
+            width: 2px;
+            background-color: white;
+        }
+            
+        & h1{
+            font-family: "Handlee", cursive;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 0rem;
+        }
+
+        & h3{
+            font-family: "Handlee", cursive;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 0rem;
+        }
+    }
 }
+
+
+
 
 .card{
     position: relative;
