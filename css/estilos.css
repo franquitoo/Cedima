@@ -103,20 +103,18 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1rem;
       padding: 1rem; }
-      .mainsectionpresen div {
-        display: flex; }
-        .mainsectionpresen div div {
-          padding: 1rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          height: 100%;
-          background-image: linear-gradient(to bottom, #06308a, #052d4e); }
-          .mainsectionpresen div div a {
-            color: white;
-            font-size: 2rem; }
+      .mainsectionpresencol {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        background-image: linear-gradient(to bottom, #06308a, #052d4e);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 70rem; }
+        .mainsectionpresencol a {
+          color: white;
+          font-size: 2rem; }
       .mainsectionpresen h4 {
         color: black;
         text-align: center;
@@ -199,8 +197,33 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
           margin: 0.5rem;
           padding: 0.5rem;
           border-radius: 10px; }
-  .mainlogo {
-    width: 50rem; }
+
+.carru {
+  width: 70rem; }
+  .carruimg {
+    max-height: 45rem;
+    width: 100%; }
+  .carruh5 {
+    padding: 1rem;
+    background-image: linear-gradient(to right, #06308a, #052d4e);
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.3rem;
+    width: 100%; }
+  .carrup {
+    color: white;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, #06308a, #052d4e);
+    border-radius: 1rem; }
+  .carrubutton {
+    background-color: #052d4e;
+    padding: 1.3rem;
+    color: white;
+    transition: 0.3s; }
+    .carrubutton:hover {
+      transform: scale(1.3, 1.3); }
 
 .footer {
   display: flex;
@@ -453,16 +476,25 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
   .mainsectionpresen {
     padding: 0rem;
     gap: 0rem; }
-    .mainsectionpresen div div {
-      height: 236px; }
-    .mainsectionpresen div div a {
-      font-size: 1rem; }
-    .mainsectionpresen h2 {
-      font-size: 1rem;
-      margin-top: 1rem; }
-    .mainsectionpresen h4 {
-      font-size: 1rem;
-      color: black; }
+    .mainsectionpresencol {
+      width: 100%;
+      padding: 0.2rem;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px; }
+      .mainsectionpresencol a {
+        font-size: 1rem; }
+  .carru {
+    width: 100%; }
+    .carruimg {
+      max-height: 20rem; }
+    .carruh5 {
+      font-size: 0.4rem; }
+    .carrup {
+      font-size: 0.4rem; }
+    .carrubutton {
+      padding: 0.2rem; }
+      .carrubutton:hover {
+        transform: scale(0, 0); }
   .footer {
     padding: 0.8rem; }
     .footer div img {

@@ -154,22 +154,37 @@
         padding: 0rem;
         gap: 0rem;
 
-        & div div{
-            height: 236px;
+        &col{
+            width: 100%;
+            padding: 0.2rem;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            & a{
+                font-size: 1rem;
+            }
         }
+    }
+}
 
-        & div div a{
-            font-size: 1rem;
-        }
+.carru{
+    width: 100%;
 
-        & h2{
-            font-size: 1rem;
-            margin-top: 1rem;
-        }
+    &img{
+        max-height: 20rem;
+    }
 
-        & h4{
-            font-size: 1rem;
-            color: black;
+    &h5{
+        font-size: 0.4rem;
+    }
+
+    &p{
+        font-size: 0.4rem;
+    }
+
+    &button{
+        padding: 0.2rem;
+        &:hover{
+            transform: scale(0,0);
         }
     }
 }
