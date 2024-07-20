@@ -369,3 +369,28 @@
     }
 
 }
+
+@media screen and (max-width: 1024px) {
+
+// index
+
+    .carru{
+        width: 42rem;
+    }
+
+    .mainsectionpresencol{
+        width: 42rem;
+    }
+
+//  nosotros
+
+.nos{
+    & section{
+        padding: 2rem;
+        & div{
+            padding: 0.7rem;
+        }
+    }
+}
+    
+}
