@@ -1,4 +1,27 @@
+@media screen and (max-width: 1024px) {
 
+    // index
+    
+        .carru{
+            width: 42rem;
+        }
+    
+        .mainsectionpresencol{
+            width: 42rem;
+        }
+    
+    //  nosotros
+    
+    .nos{
+        & section{
+            padding: 2rem;
+            & div{
+                padding: 0.7rem;
+            }
+        }
+    }
+        
+    }
 
 @media screen and (max-width: 420px){
 
@@ -78,7 +101,7 @@
 
     &imagenes{
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-evenly;
         width: 100%;
         gap: 1rem;
@@ -86,8 +109,8 @@
         & div {
 
             & img{
-                height: 5rem;
-                width: 7rem;
+                height: 15rem;
+                width: 20rem;
                 border-radius: 0px;
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
@@ -98,7 +121,7 @@
                 text-align: center;
                 margin: 0rem;
                 padding: 0.2rem;
-                font-size: 0.5rem;
+                font-size: 1.2rem;
                 border-radius: 0px;
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
@@ -108,15 +131,17 @@
 
     &imagenes2{
         align-items: center;
+        flex-direction: column;
         justify-content: space-evenly;
         width: 100%;
         gap: 1rem;
+        grid-area: img2;
 
         & div {
 
             & img{
-                height: 5rem;
-                width: 7rem;
+                height: 15rem;
+                width: 20rem;
                 border-radius: 0px;
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
@@ -127,7 +152,7 @@
                 text-align: center;
                 margin: 0rem;
                 padding: 0.2rem;
-                font-size: 0.5rem;
+                font-size: 1.2rem;
                 border-radius: 0px;
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
@@ -136,7 +161,7 @@
     }
 
     &titulo{
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin-top: 1rem;
     }
 
@@ -244,6 +269,7 @@
 
 .act{
     & section{
+        flex-direction: column;
         gap: 1rem;
     }
 
@@ -264,8 +290,8 @@
 }
 
 .card{
-    height: 10rem;
-    width: 8rem;
+    height: 20rem;
+    width: 80%rem;
 }
 
 .card .back{
@@ -273,24 +299,24 @@
 }
 
 .card .back h3{
-    font-size: 0.7rem;
+    font-size: 1.5rem;
     padding-bottom: 0rem;
     margin-bottom: 0rem;
 }
 
 .card .back h4{
-    font-size: 0.6rem;
+    font-size: 1.1rem;
     margin-bottom: 0rem;
 }
 
 .card .back p{
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     margin-bottom: 0rem;
 }
 
 .card .back .link {
     & a{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         line-height: 5px;
         padding: 0.2rem;
     }
@@ -370,27 +396,4 @@
 
 }
 
-@media screen and (max-width: 1024px) {
 
-// index
-
-    .carru{
-        width: 42rem;
-    }
-
-    .mainsectionpresencol{
-        width: 42rem;
-    }
-
-//  nosotros
-
-.nos{
-    & section{
-        padding: 2rem;
-        & div{
-            padding: 0.7rem;
-        }
-    }
-}
-    
-}
