@@ -45,7 +45,6 @@
     position: relative;
     width: 15rem;
     height: 20rem;
-    
 }
 
 .card .cara{
@@ -91,8 +90,16 @@
         font-size: 1rem;
     }
 
-}
+    & a{
 
+        & i{
+            padding-right: 0.2rem;
+        }
+
+    }
+    
+
+}
 
 .card .back .link{
     border-top: 1px solid white;
