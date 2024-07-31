@@ -354,15 +354,17 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
   transform: perspective(600px) rotateY(360deg); }
 
 .nos {
-  background-image: linear-gradient(to right, #86d886, white); }
+  background-image: linear-gradient(to right, #86d886, white);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .nosimg {
-    max-height: 25rem;
+    max-height: 20rem;
     width: 100%; }
   .nos section {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 3rem; }
+    align-items: center; }
     .nos section div {
       background-image: linear-gradient(to right, white, #b2ddb2);
       box-shadow: 10px 10px 10px #052d4e;
@@ -384,16 +386,76 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
         font-size: 1.7rem; }
       .nos section div i {
         font-size: 2rem; }
+  .noscarru {
+    width: 50rem;
+    padding: 1rem; }
+
+.cont {
+  display: flex;
+  justify-content: space-evenly; }
+  .cont section {
+    display: flex;
+    align-items: center; }
+    .cont section iframe {
+      height: 25rem;
+      width: 35rem;
+      padding: 1rem; }
+    .cont section p {
+      padding: 1rem; }
+      .cont section p i {
+        padding: 1rem;
+        margin-right: 2px;
+        border: #86d886 2px solid;
+        border-radius: 45px;
+        color: #86d886; }
+    .cont section form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      .cont section form button {
+        border-bottom-left-radius: 1rem; }
+        .cont section form button:hover {
+          background-color: #86d886; }
+      .cont section form label {
+        padding: 1rem;
+        background-image: linear-gradient(to right, #86d886, white);
+        font-family: "Handlee", cursive;
+        font-weight: 400; }
+        .cont section form label input {
+          border: solid 2px #86d886;
+          border-radius: 1rem;
+          margin-left: 0.5rem; }
 
 @media screen and (max-width: 1024px) {
+  .main section {
+    flex-direction: column-reverse; }
+  .mainimagenes {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center; }
+    .mainimagenes div img {
+      width: 14rem;
+      height: 11rem; }
+    .mainimagenes2 {
+      justify-content: center;
+      gap: 1rem; }
+      .mainimagenes2 div img {
+        width: 14rem;
+        height: 11rem; }
   .carru {
-    width: 42rem; }
+    width: 90%; }
   .mainsectionpresencol {
-    width: 42rem; }
+    width: 90%; }
   .nos section {
     padding: 2rem; }
     .nos section div {
-      padding: 0.7rem; } }
+      padding: 0.7rem; }
+  .act section {
+    flex-wrap: wrap; }
+  .card {
+    width: 18rem;
+    height: 23rem;
+    margin: 1rem; } }
 
 @media screen and (max-width: 420px) {
   .header {
@@ -572,7 +634,29 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
     line-height: 5px;
     padding: 0.2rem; }
   .nos section {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .nos div {
+    width: 100%;
+    padding: 0rem; }
+    .nos div img {
+      height: 15rem; }
+  .cont {
+    flex-direction: column; }
+    .cont section {
+      flex-direction: column-reverse;
+      align-items: center; }
+      .cont section p {
+        padding: 0.5rem; }
+      .cont section form {
+        background-image: linear-gradient(to bottom, #86d886, white);
+        border-radius: 10px; }
+        .cont section form button {
+          border-bottom-right-radius: 10px;
+          margin-bottom: 1rem; }
+        .cont section form label {
+          background-image: none; }
+      .cont section iframe {
+        width: 90%; } }
 
 @media screen and (max-width: 380px) {
   .headersubs {

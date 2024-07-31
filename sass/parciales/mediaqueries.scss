@@ -1,13 +1,41 @@
 @media screen and (max-width: 1024px) {
 
     // index
+
+    .main{
+        & section{
+            flex-direction: column-reverse;
+        }
+
+        &imagenes{
+            flex-direction: row;
+            gap: 1rem;
+            justify-content: center;
+
+            & div img{
+                width: 14rem;
+                height: 11rem;
+            }
+
+            &2{
+                justify-content: center;
+                gap: 1rem ;
+
+                & div img{
+                    width: 14rem;
+                    height: 11rem;
+                }
+            }
+        }
+
+    }
     
         .carru{
-            width: 42rem;
+            width: 90%;
         }
     
         .mainsectionpresencol{
-            width: 42rem;
+            width: 90%;
         }
     
     //  nosotros
@@ -19,6 +47,21 @@
                 padding: 0.7rem;
             }
         }
+    }
+
+    // Actividades
+
+    .act{
+
+        & section{
+            flex-wrap: wrap;
+        }
+    }
+
+    .card{
+        width: 18rem;
+        height: 23rem;
+        margin: 1rem;
     }
         
     }
@@ -335,6 +378,48 @@
     & section{
         flex-direction: column;
     }
+
+    & div{
+        width: 100%;
+        padding: 0rem;
+
+        & img{
+            height: 15rem;
+        }
+    }
+}
+
+// contacto
+
+.cont{
+    flex-direction: column;
+    & section{
+        flex-direction: column-reverse;
+        align-items: center;
+
+        & p{
+            padding: 0.5rem;
+        }
+
+        & form{
+            background-image: linear-gradient(to bottom, rgb(134, 216, 134),white);
+            border-radius: 10px;
+
+            & button{
+                border-bottom-right-radius: 10px;
+                margin-bottom: 1rem;
+            }
+
+            & label{
+                background-image: none;
+            }
+
+        }
+
+        & iframe{
+            width: 90%;
+        }
+    }
 }
 
 }
@@ -402,5 +487,8 @@
     }
 
 }
+
+
+
 
 

@@ -1,0 +1,54 @@
+.cont{
+    display: flex;
+    justify-content: space-evenly;
+
+    & section{
+        display: flex;
+        align-items: center;
+
+        & iframe{
+            height: 25rem;
+            width: 35rem;
+            padding: 1rem;
+        }
+
+        & p{
+            padding: 1rem;
+
+            & i{
+                padding: 1rem;
+                margin-right: 2px;
+                border: rgb(134, 216, 134) 2px solid;
+                border-radius: 45px;
+                color: rgb(134, 216, 134)
+            }
+        }
+
+        & form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            & button{
+                border-bottom-left-radius: 1rem;
+                &:hover{
+                    background-color: rgb(134, 216, 134);
+                }
+            }
+
+            & label{
+                padding: 1rem;
+                background-image: linear-gradient(to right, rgb(134, 216, 134),white);
+                font-family: "Handlee", cursive;
+                font-weight: 400;
+
+
+                & input{
+                    border: solid 2px rgb(134,216,134);
+                    border-radius: 1rem;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+}
