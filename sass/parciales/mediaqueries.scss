@@ -66,6 +66,161 @@
         
     }
 
+@media screen and (max-width: 720px){
+
+// Index
+
+.header{
+    &logo{
+        & img{
+            height: 5rem;
+        }
+
+        & h3{
+            font-size: 2rem;
+        }
+    }
+
+    &subs{
+        gap: 1.5rem;
+        & a{
+            font-size: 0.7rem;
+            box-shadow: 5px 5px 5px white;
+        }
+    }
+
+    &redes{
+        gap: 1rem;
+        & a{
+            font-size: 1rem;
+            padding: 0.3rem;
+        }
+    }
+}
+
+.main{
+    &imagenes{
+        & div {
+            & img{
+                height: 7rem;
+                width: 10rem;
+            }
+
+            & h3{
+                font-size: 0.6rem;
+            }
+        }
+        
+        &2{
+            & div {
+                & img{
+                    height: 7rem;
+                    width: 10rem;
+                }
+    
+                & h3{
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+
+    &sectionbarra{
+        & div{
+            gap: 1rem;
+        }
+
+        & h4{
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.carru{
+    & img{
+        height: 20rem;
+    }
+}
+
+.footer{
+    flex-wrap: wrap;
+    & div{
+        padding: 0.5rem;
+    
+        & h3{
+            font-size: 1rem;
+        }
+    }
+
+    & img{
+        height: 5rem;
+    }
+}
+
+//  Act
+
+// Nos
+
+.nos{
+
+    & div{
+        padding: 0.5rem;
+    }
+
+    & section{
+
+        & div{
+            height: 18rem;
+            margin: 1rem;
+
+            & p{
+                font-size: 0.6rem;
+            }
+    
+            & .p{
+                font-size: 0.6rem;
+            }
+
+            & h3{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+// cont
+
+.cont{
+    & section{
+
+        & div{
+            & p{
+                font-size: 0.7rem;
+                padding: 0.5rem;
+
+                & i{
+                    padding: 0.2rem;
+                }
+            }
+        }
+
+        & iframe{
+            height: 20rem;
+            width: 20rem;
+        }
+
+        & form{
+    
+            & label{
+                padding: 0.5rem;
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+}
+
+}
 @media screen and (max-width: 420px){
 
     // Index
@@ -377,10 +532,25 @@
 .nos{
     & section{
         flex-direction: column;
+
+        & div{
+            justify-content: space-evenly;
+            height: 20rem;
+            & p{
+                font-size: 0.8rem;
+            }
+
+            & .p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    &carru{
+        width: 100%;
     }
 
     & div{
-        width: 100%;
         padding: 0rem;
 
         & img{

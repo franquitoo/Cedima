@@ -457,6 +457,68 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
     height: 23rem;
     margin: 1rem; } }
 
+@media screen and (max-width: 720px) {
+  .headerlogo img {
+    height: 5rem; }
+  .headerlogo h3 {
+    font-size: 2rem; }
+  .headersubs {
+    gap: 1.5rem; }
+    .headersubs a {
+      font-size: 0.7rem;
+      box-shadow: 5px 5px 5px white; }
+  .headerredes {
+    gap: 1rem; }
+    .headerredes a {
+      font-size: 1rem;
+      padding: 0.3rem; }
+  .mainimagenes div img {
+    height: 7rem;
+    width: 10rem; }
+  .mainimagenes div h3 {
+    font-size: 0.6rem; }
+  .mainimagenes2 div img {
+    height: 7rem;
+    width: 10rem; }
+  .mainimagenes2 div h3 {
+    font-size: 0.6rem; }
+  .mainsectionbarra div {
+    gap: 1rem; }
+  .mainsectionbarra h4 {
+    font-size: 0.8rem; }
+  .carru img {
+    height: 20rem; }
+  .footer {
+    flex-wrap: wrap; }
+    .footer div {
+      padding: 0.5rem; }
+      .footer div h3 {
+        font-size: 1rem; }
+    .footer img {
+      height: 5rem; }
+  .nos div {
+    padding: 0.5rem; }
+  .nos section div {
+    height: 18rem;
+    margin: 1rem; }
+    .nos section div p {
+      font-size: 0.6rem; }
+    .nos section div .p {
+      font-size: 0.6rem; }
+    .nos section div h3 {
+      font-size: 1rem; }
+  .cont section div p {
+    font-size: 0.7rem;
+    padding: 0.5rem; }
+    .cont section div p i {
+      padding: 0.2rem; }
+  .cont section iframe {
+    height: 20rem;
+    width: 20rem; }
+  .cont section form label {
+    padding: 0.5rem;
+    font-size: 0.7rem; } }
+
 @media screen and (max-width: 420px) {
   .header {
     padding: 0.5rem; }
@@ -635,8 +697,16 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
     padding: 0.2rem; }
   .nos section {
     flex-direction: column; }
+    .nos section div {
+      justify-content: space-evenly;
+      height: 20rem; }
+      .nos section div p {
+        font-size: 0.8rem; }
+      .nos section div .p {
+        font-size: 0.8rem; }
+  .noscarru {
+    width: 100%; }
   .nos div {
-    width: 100%;
     padding: 0rem; }
     .nos div img {
       height: 15rem; }
